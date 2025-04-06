@@ -18,12 +18,13 @@ func (itself Client) ClientSearchRequest(
 	[]errors.GenericError,
 ) {
 	logger.Info("initialize search request in db ")
-
+	var ignoreUnavailableIndex = true
 	wrapper, mapped := requests.DoRequest(itself.client, opensearchapi.SearchRequest{
-		Size:  &queryPaginationRequest.Size,
-		From:  &queryPaginationRequest.From,
-		Query: queryPaginationRequest.QueryString,
-		Index: queryPaginationRequest.Index,
+		Size:              &queryPaginationRequest.Size,
+		From:              &queryPaginationRequest.From,
+		Query:             queryPaginationRequest.QueryString,
+		Index:             queryPaginationRequest.Index,
+		IgnoreUnavailable: &ignoreUnavailableIndex,
 	})
 
 	response := responses.OsResponse{}
