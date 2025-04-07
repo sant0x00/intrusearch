@@ -52,7 +52,7 @@ func mapFromBulkResponse(
 				result.Successful += 1
 			} else {
 				result.Failed += 1
-				mapped = append(mapped, derrors.GenericError{value.Error.Type, value.Error.Reason})
+				mapped = append(mapped, derrors.GenericError{Type: value.Error.Type, Reason: value.Error.Reason})
 			}
 		}
 	} else {

@@ -14,16 +14,16 @@ If you're looking for a fast and efficient way to interact with OpenSearch from 
 
 ## Installation
 
-To install Intrusearch, simply run the following command:
+To install `Intrusearch`, simply run the following command:
 
 ```shell
-go get github.com/IntruderLabs/intrusearch
+go get github.com/intruderLabs/intrusearch
 ```
 
 Alternatively, you can clone the repository and install it manually:
 
 ```shell
-git clone https://github.com/IntruderLabs/intrusearch.git
+git clone https://github.com/intruderLabs/intrusearch.git
 cd intrusearch
 go install
 ```
@@ -46,9 +46,9 @@ func main() {
 
 func NewSearchClient() *intrusearch.Client {
 	openSearchAddress := "http://127.0.0.1" // OpenSearch address
-	awsSamLocal := true                     // is your environment development? (debug mode)
+	devMode := true                     // is your environment development? (debug mode)
 
-	client := intrusearch.NewClient(openSearchAddress, awsSamLocal) // instance for creating a new OpenSearch client
+	client := intrusearch.NewClient(openSearchAddress, devMode) // instance for creating a new OpenSearch client
 
 	return &client
 }
@@ -64,6 +64,6 @@ go test -v
 
 ## Contact
 
-Felipe Rios - [@rios0rios0](https://rios0rios0.github.io/tabs/about) - `frios at intruderlabs dot com dot br`
+Alan Lacerda - [@alacerda](https://alacerda.github.io/tabs/about-me/) - `alan at intruderlabs dot com dot br`
 
-Project Link: [https://github.com/IntruderLabs/intrusearch](https://github.com/IntruderLabs/intrusearch)
+Project Link: [https://github.com/intruderLabs/intrusearch](https://github.com/IntruderLabs/intrusearch)
