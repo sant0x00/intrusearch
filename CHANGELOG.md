@@ -2,14 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 When a new release is proposed:
 
 1. Create a new branch `bump/x.x.x` (this isn't a long-lived branch!!!);
 2. The Unreleased section on `CHANGELOG.md` gets a version number and date;
 3. Open a Pull Request with the bump version changes targeting the `main` branch;
-4. When the Pull Request is merged a new git tag must be created using [GitLab environment](https://gitlab.com/intruderlabs/toolbox/intrusearch/-/tags).
+4. When the Pull Request is merged a new git tag must be created using [GitHub environment](https://github.com/intruderlabs/intrusearch/tags).
 
 Releases to productive environments should run from a tagged version.
 Exceptions are acceptable depending on the circumstances (critical bug fixes that can be cherry-picked, etc.).
@@ -18,6 +18,7 @@ Exceptions are acceptable depending on the circumstances (critical bug fixes tha
 
 ### Added
 
+- added method to return raw response body
 - added `README.md` about the library to the community - [4157141881](https://intruderlabs.monday.com/boards/3790337872/pulses/4157141881)
 - added `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` to the community - [4157141881](https://intruderlabs.monday.com/boards/3790337872/pulses/4157141881)
 - added feature to search by index _id
